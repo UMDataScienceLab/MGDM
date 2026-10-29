@@ -3,6 +3,8 @@
 This repository contains the official implementation of the paper:  
 **Diffusion-Based Surrogate Modeling and Multi-Fidelity Calibration**
 
+We use diffusion models as fast surrogates (DBS) for expensive simulations of spatio-temporal processes, and use these surrogates for multi-fidelity calibration of model parameters.
+
 ---
 
 ## 🎥 Generated Videos
@@ -55,3 +57,19 @@ The model checkpoints will be automatically saved under the /models folder.
 
 - diffusion_fluid.py implements DBS training and sampling on the fluid dataset.
 - diffusion_heat.py implements DBS training and sampling on the LBMAM dataset.
+
+## Citation
+
+[Paper](https://doi.org/10.1109/TASE.2025.3582171) (IEEE Transactions on Automation Science and Engineering, 2025). If you use this code, please cite:
+
+```bibtex
+@article{shi2025diffusion,
+  title={Diffusion-Based Surrogate Modeling and Multi-Fidelity Calibration},
+  author={Shi, Naichen and Yan, Hao and Guo, Shenghan and Al Kontar, Raed},
+  journal={IEEE Transactions on Automation Science and Engineering},
+  volume={22},
+  pages={18217--18230},
+  year={2025},
+  doi={10.1109/TASE.2025.3582171}
+}
+```
